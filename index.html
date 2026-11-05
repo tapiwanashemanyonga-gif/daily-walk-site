@@ -3,70 +3,138 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#17251f">
-  <meta name="description" content="Daily Walk is a Christian spiritual-growth companion designed to help you build a steady, meaningful daily walk with God.">
-  <title>Daily Walk — Grow in the Word, one day at a time</title>
+  <meta name="theme-color" content="#173c32">
+  <meta name="description" content="Daily Walk is a Christian spiritual-growth companion for Scripture, devotionals, prayer, Bible study and a closer daily walk with God.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Daily Walk — Grow closer to God, one day at a time">
+  <meta property="og:description" content="Make time for Scripture, prayer, reflection and practical spiritual growth with Daily Walk.">
+  <meta property="og:url" content="https://daily-walk-site.onrender.com/">
+  <title>Daily Walk | Grow closer to God, one day at a time</title>
   <style>
-    :root{color-scheme:light;--ink:#17251f;--muted:#5f6d65;--green:#28634a;--cream:#f7f6ef;--gold:#e6c77a;--white:#fff}
-    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--ink);background:var(--cream);line-height:1.65}
-    a{color:inherit}.wrap{width:min(1080px,calc(100% - 36px));margin:auto}.top{padding:22px 0;display:flex;align-items:center;justify-content:space-between;gap:18px}.brand{font-weight:800;letter-spacing:.04em;display:flex;align-items:center;gap:10px}.mark{display:grid;place-items:center;width:42px;height:42px;border-radius:14px;background:var(--green);color:#fff;font-weight:900}.nav{font-size:.94rem;color:var(--muted)}.hero{padding:66px 0 74px;background:radial-gradient(ellipse at 85% 15%,#dce9d8 0,transparent 40%),var(--cream)}.eyebrow{color:var(--green);font-size:.78rem;font-weight:800;letter-spacing:.14em;text-transform:uppercase}.hero h1{font-size:clamp(2.5rem,7vw,5rem);line-height:1.06;letter-spacing:-.055em;max-width:760px;margin:16px 0 20px}.hero p{max-width:650px;color:var(--muted);font-size:1.15rem}.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}.btn{display:inline-block;text-decoration:none;padding:12px 19px;border-radius:999px;font-weight:700}.primary{background:var(--green);color:white}.secondary{border:1px solid #cbd4ca}.note{font-size:.86rem;color:var(--muted);margin-top:12px}.section{padding:62px 0}.section h2{font-size:clamp(1.8rem,4vw,2.7rem);line-height:1.15;letter-spacing:-.035em;margin:10px 0 14px}.lead{max-width:680px;color:var(--muted)}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;margin-top:28px}.card{background:#fff;border:1px solid #e5e8df;border-radius:22px;padding:24px}.icon{font-size:1.5rem}.card h3{margin:12px 0 6px}.card p{margin:0;color:var(--muted)}.quote{background:var(--ink);color:#fff;border-radius:26px;padding:34px}.quote p{font-size:1.25rem;max-width:760px}.quote small{color:#cbd8cf}.footer{border-top:1px solid #dfe4db;padding:28px 0;color:var(--muted);font-size:.9rem}.footer-inner{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-    @media(max-width:700px){.hero{padding:48px 0 56px}.grid{grid-template-columns:1fr}.card{padding:21px}.nav{display:none}.section{padding:48px 0}}
+    :root{color-scheme:light;--forest:#173c32;--forest-2:#245b49;--sage:#dce9dc;--sage-2:#edf3e9;--cream:#faf9f4;--paper:#fffefa;--ink:#1d2b25;--muted:#63716a;--gold:#d9b86b;--line:#e5e9df;--shadow:0 22px 60px rgba(23,60,50,.10)}
+    *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:86px}body{margin:0;background:var(--cream);color:var(--ink);font:16px/1.65 system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}a{color:inherit}.wrap{width:min(1120px,calc(100% - 40px));margin-inline:auto}
+    .site-header{position:sticky;top:0;z-index:10;background:rgba(250,249,244,.92);backdrop-filter:blur(14px);border-bottom:1px solid rgba(229,233,223,.85)}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:22px}.brand{display:flex;align-items:center;gap:11px;text-decoration:none;font-weight:850;letter-spacing:.09em;color:var(--forest)}.brand-mark{width:43px;height:43px;display:grid;place-items:center;border-radius:15px;background:var(--forest);color:#fff;box-shadow:0 7px 18px rgba(23,60,50,.18)}.brand-mark svg{width:25px;height:25px}.nav-links{display:flex;align-items:center;gap:26px;font-size:.92rem;color:var(--muted)}.nav-links a{text-decoration:none}.nav-links a:hover{color:var(--forest)}.nav-cta{padding:10px 16px;border-radius:999px;background:var(--forest);color:white!important;font-weight:750}
+    .hero{position:relative;overflow:hidden;padding:82px 0 86px;background:radial-gradient(ellipse at 78% 12%,rgba(216,232,211,.92),transparent 38%),linear-gradient(135deg,#f7f7ef 0%,#f1f4e9 55%,#e8efe4 100%)}.hero:after{content:"";position:absolute;width:410px;height:410px;border:1px solid rgba(36,91,73,.13);border-radius:50%;right:-115px;bottom:-245px;box-shadow:0 0 0 35px rgba(36,91,73,.035),0 0 0 75px rgba(36,91,73,.025)}.hero-grid{position:relative;z-index:1;display:grid;grid-template-columns:1.12fr .88fr;align-items:center;gap:54px}.eyebrow{display:inline-flex;align-items:center;gap:9px;color:var(--forest-2);font-size:.75rem;font-weight:850;letter-spacing:.16em;text-transform:uppercase}.eyebrow:before{content:"";width:23px;height:2px;background:var(--gold)}h1,h2,h3,p{margin-top:0}.hero h1{max-width:690px;margin:18px 0 20px;font-size:clamp(2.8rem,6.5vw,5.25rem);line-height:1.015;letter-spacing:-.065em;color:var(--forest)}.hero h1 em{font-family:Georgia,serif;font-weight:500;color:var(--forest-2)}.hero-copy{max-width:620px;color:#596a61;font-size:1.12rem}.actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:29px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:49px;padding:12px 19px;border-radius:999px;text-decoration:none;font-weight:780;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-2px)}.btn-primary{background:var(--forest);color:white;box-shadow:0 10px 22px rgba(23,60,50,.16)}.btn-light{border:1px solid #cbd7ca;background:rgba(255,255,255,.5);color:var(--forest)}.trust-note{margin:15px 0 0;color:#718078;font-size:.84rem}
+    .verse-card{position:relative;max-width:430px;margin-inline:auto;padding:34px 32px 30px;border:1px solid rgba(255,255,255,.8);border-radius:30px;background:rgba(255,254,250,.82);box-shadow:var(--shadow);transform:rotate(1deg)}.verse-icon{width:48px;height:48px;display:grid;place-items:center;margin-bottom:24px;border-radius:16px;background:var(--sage-2);color:var(--forest);font-size:1.35rem}.verse-label{color:var(--forest-2);font-size:.72rem;font-weight:850;letter-spacing:.14em;text-transform:uppercase}.verse-card blockquote{margin:12px 0 18px;font-family:Georgia,serif;font-size:1.72rem;line-height:1.32;color:var(--forest)}.verse-card cite{font-style:normal;color:var(--muted);font-size:.88rem}.verse-rule{height:1px;margin:24px 0 18px;background:var(--line)}.verse-foot{display:flex;align-items:center;justify-content:space-between;gap:12px;color:var(--muted);font-size:.8rem}.leaf{font-size:1.25rem;color:var(--forest-2)}
+    .intro{padding:78px 0 35px;text-align:center}.intro h2,.section-heading h2{margin:12px 0 13px;color:var(--forest);font-size:clamp(2rem,4.2vw,3.15rem);line-height:1.12;letter-spacing:-.045em}.intro p,.section-heading p{max-width:690px;margin:0 auto;color:var(--muted);font-size:1.04rem}.features{padding:28px 0 82px}.feature-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.feature{min-height:220px;padding:25px 24px;border:1px solid var(--line);border-radius:23px;background:var(--paper);box-shadow:0 8px 24px rgba(23,60,50,.035)}.feature-icon{width:47px;height:47px;display:grid;place-items:center;border-radius:15px;background:var(--sage-2);font-size:1.35rem}.feature h3{margin:18px 0 7px;color:var(--forest);font-size:1.1rem}.feature p{margin:0;color:var(--muted);font-size:.94rem}
+    .rhythm{padding:78px 0;background:#edf2e9}.rhythm-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:65px;align-items:center}.section-heading h2{max-width:480px}.section-heading p{margin:0;max-width:470px}.steps{display:grid;gap:13px}.step{display:grid;grid-template-columns:43px 1fr;gap:15px;align-items:start;padding:17px 19px;border:1px solid #dce5d9;border-radius:18px;background:rgba(255,255,255,.68)}.step-no{width:39px;height:39px;display:grid;place-items:center;border-radius:13px;background:var(--forest);color:white;font-weight:800}.step h3{margin:1px 0 3px;color:var(--forest);font-size:1rem}.step p{margin:0;color:var(--muted);font-size:.9rem}
+    .scripture{padding:82px 0}.scripture-panel{position:relative;overflow:hidden;padding:45px clamp(25px,6vw,65px);border-radius:30px;background:var(--forest);color:white}.scripture-panel:after{content:"✦";position:absolute;right:38px;top:14px;color:rgba(255,255,255,.08);font-size:10rem}.scripture-panel .eyebrow{color:#e6d29b}.scripture-panel blockquote{position:relative;z-index:1;max-width:800px;margin:18px 0 17px;font-family:Georgia,serif;font-size:clamp(1.55rem,3.6vw,2.35rem);line-height:1.34}.scripture-panel cite{color:#c7d6ca;font-style:normal;font-size:.9rem}
+    .download{padding:0 0 82px}.download-panel{display:flex;align-items:center;justify-content:space-between;gap:30px;padding:34px 38px;border:1px solid #dbe5d9;border-radius:25px;background:linear-gradient(110deg,#e8f0e5,#f7f7ef)}.download-panel h2{margin:8px 0 8px;color:var(--forest);font-size:clamp(1.55rem,3vw,2.15rem);letter-spacing:-.035em}.download-panel p{max-width:600px;margin:0;color:var(--muted)}.download-status{flex:0 0 auto;padding:11px 16px;border:1px solid #c8d8c8;border-radius:999px;background:rgba(255,255,255,.65);color:var(--forest);font-size:.82rem;font-weight:800}
+    .contact{padding:70px 0;background:#f0f2eb}.contact-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}.contact h2{margin:9px 0;color:var(--forest);font-size:2rem;letter-spacing:-.04em}.contact p{margin:0;color:var(--muted)}.email{font-weight:800;color:var(--forest-2);text-decoration:none;overflow-wrap:anywhere}
+    footer{padding:25px 0;background:#132f28;color:#d6e1d8;font-size:.87rem}.footer-inner{display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap}.footer-links{display:flex;gap:18px}.footer-links a{color:#d6e1d8;text-decoration:none}.footer-links a:hover{text-decoration:underline}
+    @media(max-width:820px){.hero-grid,.rhythm-grid{grid-template-columns:1fr;gap:38px}.hero{padding:62px 0}.verse-card{max-width:520px;width:100%}.feature-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.rhythm-grid{gap:30px}.section-heading p{margin:0}.download-panel{align-items:flex-start;flex-direction:column}.contact-inner{align-items:flex-start;flex-direction:column}}
+    @media(max-width:560px){.wrap{width:min(100% - 30px,1120px)}.nav{min-height:68px}.nav-links{gap:12px}.nav-links a:not(.nav-cta){display:none}.nav-cta{padding:9px 13px;font-size:.83rem}.brand{font-size:.9rem}.brand-mark{width:39px;height:39px}.hero{padding:48px 0 55px}.hero h1{font-size:clamp(2.55rem,13vw,3.65rem)}.hero-copy{font-size:1rem}.verse-card{padding:27px 23px;border-radius:24px}.verse-card blockquote{font-size:1.5rem}.intro{padding:58px 0 25px}.features{padding:22px 0 58px}.feature-grid{grid-template-columns:1fr;gap:12px}.feature{min-height:0;padding:21px}.rhythm{padding:58px 0}.scripture{padding:58px 0}.scripture-panel{padding:32px 24px;border-radius:23px}.download{padding-bottom:58px}.download-panel{padding:26px 22px}.contact{padding:55px 0}.footer-inner{align-items:flex-start;flex-direction:column}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important}}
   </style>
 </head>
 <body>
-  <header class="wrap top">
-    <div class="brand"><span class="mark">DW</span><span>DAILY WALK</span></div>
-    <div class="nav">A companion for your daily faith journey</div>
+  <header class="site-header">
+    <nav class="wrap nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Daily Walk home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><path d="M12 20V8m0 4C7.5 12 5 9.5 5 5c4.5 0 7 2.5 7 7Zm0 3c4.5 0 7-2.5 7-7-4.5 0-7 2.5-7 7Z" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <span>DAILY WALK</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">What’s inside</a><a href="#journey">Your journey</a><a href="#contact">Contact</a>
+        <a class="nav-cta" href="#download">Get the app</a>
+      </div>
+    </nav>
   </header>
-  <main>
+  <main id="top">
     <section class="hero">
-      <div class="wrap">
-        <div class="eyebrow">Faith for everyday life</div>
-        <h1>Grow in the Word, one day at a time.</h1>
-        <p>Daily Walk is a Christian spiritual-growth companion created to help you build a more consistent, thoughtful and practical walk with God—one small step at a time.</p>
-        <div class="actions">
-          <a class="btn primary" href="#features">Explore Daily Walk</a>
-          <a class="btn secondary" href="#purpose">Our purpose</a>
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Faith for everyday life</div>
+          <h1>Grow closer to God, <em>one day at a time.</em></h1>
+          <p class="hero-copy">Make room for Scripture, meaningful teaching, honest prayer and steady spiritual growth. Daily Walk is designed to help you take the next step in your walk with God.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#features">Discover Daily Walk <span aria-hidden="true">→</span></a>
+            <a class="btn btn-light" href="#purpose">Why Daily Walk?</a>
+          </div>
+          <p class="trust-note">A simple place to learn, reflect, pray and put your faith into practice.</p>
         </div>
-        <div class="note">A welcoming space for Scripture, reflection, prayer and everyday spiritual growth.</div>
+        <aside class="verse-card" aria-label="Scripture encouragement">
+          <div class="verse-icon" aria-hidden="true">✦</div>
+          <div class="verse-label">A thought for today</div>
+          <blockquote>“Your word is a lamp to my feet, and a light for my path.”</blockquote>
+          <cite>Psalm 119:105 · World English Bible</cite>
+          <div class="verse-rule"></div>
+          <div class="verse-foot"><span>Walk in the light of the Word</span><span class="leaf" aria-hidden="true">❧</span></div>
+        </aside>
       </div>
     </section>
-    <section class="section" id="features">
+
+    <section class="intro" id="features">
       <div class="wrap">
-        <div class="eyebrow">A steady rhythm</div>
-        <h2>Make space for what matters.</h2>
-        <p class="lead">Faith grows through consistent moments of learning, reflection and action. Daily Walk is being developed around practical ways to make those moments part of everyday life.</p>
-        <div class="grid">
-          <article class="card"><div class="icon" aria-hidden="true">📖</div><h3>Read with understanding</h3><p>Spend intentional time with Scripture and explore its meaning in the context of daily life.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">🙏</div><h3>Reflect and pray</h3><p>Create a quiet moment to reflect, pray and bring your day before God.</p></article>
-          <article class="card"><div class="icon" aria-hidden="true">🌱</div><h3>Put faith into practice</h3><p>Turn what you learn into small, meaningful actions that encourage steady spiritual growth.</p></article>
-        </div>
+        <div class="eyebrow">Tools for your faith journey</div>
+        <h2>Faith that grows beyond Sunday.</h2>
+        <p>Build a daily rhythm with helpful resources for understanding the Bible, strengthening your prayer life and living out what you learn.</p>
       </div>
     </section>
-    <section class="section" id="purpose">
-      <div class="wrap">
-        <div class="quote">
-          <div class="eyebrow" style="color:var(--gold)">The Daily Walk purpose</div>
-          <p>“Let us not grow weary of doing good, for in due season we will reap, if we do not give up.”</p>
-          <small>Galatians 6:9 · World English Bible wording</small>
+    <section class="features">
+      <div class="wrap feature-grid">
+        <article class="feature"><div class="feature-icon" aria-hidden="true">📖</div><h3>Daily devotionals</h3><p>Spend a few focused moments with Scripture and practical encouragement for everyday life.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">💬</div><h3>AI Bible guide</h3><p>Explore Bible questions, clarify difficult passages and make your personal study more meaningful.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">🙏</div><h3>Prayer and reflection</h3><p>Find words for prayer, pause to reflect and bring the joys and challenges of each day before God.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">🧠</div><h3>Scripture memory coach</h3><p>Practise remembering verses and return to important truths as you grow in faith.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">🕊️</div><h3>Sermon and study helper</h3><p>Prepare lessons, explore themes and organise Bible study ideas for personal or group learning.</p></article>
+        <article class="feature"><div class="feature-icon" aria-hidden="true">🎧</div><h3>Listen and learn</h3><p>Make space for Bible listening and learning moments as part of your everyday routine.</p></article>
+      </div>
+    </section>
+
+    <section class="rhythm" id="journey">
+      <div class="wrap rhythm-grid">
+        <div class="section-heading">
+          <div class="eyebrow">A simple daily rhythm</div>
+          <h2>Small moments. A stronger walk.</h2>
+          <p>You do not have to know everything or do everything at once. Begin with one passage, one prayer and one step of faith today.</p>
+        </div>
+        <div class="steps">
+          <article class="step"><span class="step-no">01</span><div><h3>Read with an open heart</h3><p>Spend time in Scripture and ask what it teaches about God and life.</p></div></article>
+          <article class="step"><span class="step-no">02</span><div><h3>Understand and reflect</h3><p>Use helpful study resources to think through the message and its meaning.</p></div></article>
+          <article class="step"><span class="step-no">03</span><div><h3>Pray and put it into practice</h3><p>Talk to God and choose one practical way to live out what you have learned.</p></div></article>
         </div>
       </div>
     </section>
 
-    <section class="section" id="contact">
+    <section class="scripture" id="purpose">
       <div class="wrap">
-        <div class="eyebrow">Get in touch</div>
-        <h2>Contact Daily Walk</h2>
-        <p class="lead">Questions or feedback about the Daily Walk project? Email us and we’ll do our best to help.</p>
-        <p><a href="mailto:dailywalk.app1@gmail.com">dailywalk.app1@gmail.com</a></p>
-        <p><a href="privacy.html">Read our Privacy Policy</a></p>
+        <div class="scripture-panel">
+          <div class="eyebrow">The heart behind Daily Walk</div>
+          <blockquote>“Let us not grow weary in doing good, for we will reap in due season, if we don’t give up.”</blockquote>
+          <cite>Galatians 6:9 · World English Bible</cite>
+        </div>
+      </div>
+    </section>
+
+    <section class="download" id="download">
+      <div class="wrap">
+        <div class="download-panel">
+          <div>
+            <div class="eyebrow">Take Daily Walk with you</div>
+            <h2>Your faith journey can continue wherever you are.</h2>
+            <p>We’re preparing the website’s Android download area. The official app download link will appear here once the release file has been checked and connected.</p>
+          </div>
+          <span class="download-status">Android download coming soon</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="wrap contact-inner">
+        <div>
+          <div class="eyebrow">We would love to hear from you</div>
+          <h2>Stay connected.</h2>
+          <p>Have a question, suggestion or testimony to share with the Daily Walk project?</p>
+        </div>
+        <a class="email" href="mailto:dailywalk.app1@gmail.com">dailywalk.app1@gmail.com <span aria-hidden="true">↗</span></a>
       </div>
     </section>
   </main>
-  <footer class="footer">
+  <footer>
     <div class="wrap footer-inner">
-      <span>© <span id="year">2026</span> Daily Walk. A Christian spiritual-growth project.</span>
-      <span><a href="#contact">Contact</a> · <a href="privacy.html">Privacy Policy</a></span>
+      <span>© 2026 Daily Walk · Grow in the Word, one day at a time.</span>
+      <div class="footer-links"><a href="privacy.html">Privacy Policy</a><a href="mailto:dailywalk.app1@gmail.com">Contact</a></div>
     </div>
   </footer>
 </body>
